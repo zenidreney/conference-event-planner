@@ -31,10 +31,13 @@ const ConferenceEvent = () => {
           dispatch(decrementQuantity(index));
         }
       };
-    const handleIncrementAvQuantity = (index) => {
+  
+      const handleIncrementAvQuantity = (index) => {
+        dispatch(incrementAvQuantity(index));
     };
-
+    
     const handleDecrementAvQuantity = (index) => {
+        dispatch(decrementAvQuantity(index));
     };
 
     const handleMealSelection = (index) => {
@@ -73,14 +76,6 @@ const ConferenceEvent = () => {
           }
         }
       }
-
-    const handleIncrementAvQuantity = (index) => {
-        dispatch(incrementAvQuantity(index));
-    };
-    
-    const handleDecrementAvQuantity = (index) => {
-        dispatch(decrementAvQuantity(index));
-    };
 
     return (
         <>
